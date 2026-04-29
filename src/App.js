@@ -1,24 +1,28 @@
-import logo from './logo.svg';
+import React from 'react';
+//Инстр. за навигация
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
 import './App.css';
+
+// Временни страници (placeholder), докато създадем истинските файлове
+const Home = () => <h1>Добре дошли в EV Rent! 🚗⚡</h1>;
+const Catalog = () => <h1>Каталог със зарядни станции</h1>;
+const Register = () => <h1>Форма за регистрация</h1>;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <main className="container">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/catalog" element={<Catalog />} />
+            <Route path="/register" element={<Register />} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
   );
 }
 
