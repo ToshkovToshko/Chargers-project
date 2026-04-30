@@ -3,11 +3,12 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import './App.css';
+import Register from './pages/Register';
 
 // Временни страници (placeholder), докато създадем истинските файлове
 const Home = () => <h1>Добре дошли в EV Rent! 🚗⚡</h1>;
 const Catalog = () => <h1>Каталог със зарядни станции</h1>;
-const Register = () => <h1>Форма за регистрация</h1>;
+//const Register = () => <h1>Форма за регистрация</h1>;
 
 function App() {
   return (
