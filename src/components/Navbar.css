@@ -50,4 +50,11 @@
   padding: 8px 15px;
   border-radius: 5px;
   font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.register-btn:hover {
+  background-color: #a8d5a1;
+  color: #000;
 }

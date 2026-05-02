@@ -19,10 +19,21 @@ const Navbar = () => {
       <div className="nav-links">
         <Link to="/" className="nav-link">Начало</Link>
         <Link to="/catalog" className="nav-link">Каталог</Link>
+
+        {user && user.role === 'provider' && (
+         <Link to="/create-ad" className="nav-link">Качи обява</Link>
+        )}
+
         {user ? (
-          <button onClick={handleLogout} className="logout-btn">Изход</button>
+          <>
+            <span className="user-email">👤 {user.email}</span>
+            <button onClick={handleLogout} className="logout-btn">Изход</button>
+          </>
         ) : (
-          <Link to= "/Register" className="register-btn">Регистрация</Link>
+          <>
+            <Link to="/login" className="register-btn">Влез</Link>
+            <Link to= "/Register" className="register-btn">Регистрация</Link>
+          </>
         )}
       </div>
     </nav>

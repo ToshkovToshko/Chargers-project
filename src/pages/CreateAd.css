@@ -1,0 +1,40 @@
+.form-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.ad-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ad-form label {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.ad-form input, .ad-form select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.save-btn {
+  margin-top: 20px;
+  background-color: #bdecb6;
+  border: none;
+  padding: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.save-btn:hover {
+  background-color: #a8d5a1;
+}

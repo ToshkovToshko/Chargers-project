@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import './App.css';
 import Register from './pages/Register';
+import Login from './pages/Login';
+import CreateAd from './pages/CreateAd';
 import { AuthProvider } from './context/AuthContext';
 
 // Временни страници (placeholder), докато създадем истинските файлове
@@ -22,6 +24,8 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/catalog" element={<Catalog />} />
               <Route path="/register" element={<Register />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/create-ad" element={<CreateAd />} />
             </Routes>
           </main>
         </div>

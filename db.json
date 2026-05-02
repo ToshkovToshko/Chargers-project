@@ -13,5 +13,14 @@
       "id": 2
     }
   ],
-  "ads": []
+  "ads": [
+    {
+      "name": "Зарядна станция 22 про",
+      "type": "Трифазна",
+      "address": "Жк. Дедово бл. 332 паркомясто 6",
+      "imageUrl": "https://evpoint.bg/data/ufiles/images/catalog/main/megacart-product2/zarqdna-stancia-s-displei-ev22-pro-22-kw.jpg",
+      "price": 5,
+      "id": 1
+    }
+  ]
 }
