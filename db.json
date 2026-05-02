@@ -5,6 +5,12 @@
       "password": "12345",
       "role": "renter",
       "id": 1
+    },
+    {
+      "email": "testAccount@test.bg",
+      "password": "12345",
+      "role": "provider",
+      "id": 2
     }
   ],
   "ads": []

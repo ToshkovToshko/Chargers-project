@@ -1,6 +1,7 @@
-import React, {useState} from "react";
+import React, {useState, useContext} from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { AuthContext } from '../context/AuthContext';
 import './Register.css'
 
 const Register = () => {
@@ -9,12 +10,18 @@ const Register = () => {
     const [role, setRole] = useState('renter');
     const navigate = useNavigate();
 
+    // взимам логин от контекст
+    const { login } = useContext(AuthContext);
+
     const handleRegister = async (e) => {
         e.preventDefault();
         const newUser = {email, password, role};
 
         try{
             await axios.post('http://localhost:5000/users', newUser);
+            
+            login(newUser);
+
             alert("Регистрацията е успешна!");
 
             if (role === 'provider'){
