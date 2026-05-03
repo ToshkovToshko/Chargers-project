@@ -20,7 +20,6 @@ const Login = () => {
 
       if (user) {
         login(user);
-        alert("Добре дошли!");
         navigate('/catalog');
       } else {
         alert("Грешен имейл или парола!");

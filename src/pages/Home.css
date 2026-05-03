@@ -1,0 +1,114 @@
+.home-hero {
+  position: relative;
+  height: calc(100vh - 70px); 
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.slideshow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: fade 15s infinite;
+}
+
+.slide-1 {
+  background-image: url('https://varnacharging.com/images/varnacharging-header-image.jpg');
+  animation-delay: 0s;
+}
+
+.slide-2 {
+  background-image: url('https://cdn-calmn.nitrocdn.com/JhAUTdNnUZWJyxYlDQVQoOgdGkOPjrsN/assets/desktop/optimized/rev-a96b8ed/lh5.googleusercontent.com/RS8Vp2TK-RI17zmD7m7i1uwrDQmL7hGktjtmMTXBjHAuP6jRyQs3o_96AnPl00JXASbTlTqMBPHPwVVaZFmgKpzrVC4OXUcidltKmA81-MDzJqi8fNU-CxAL5D89rntxov6EWsX0=s0');
+  animation-delay: 5s;
+}
+
+.slide-3 {
+  background-image: url('https://cdn-calmn.nitrocdn.com/JhAUTdNnUZWJyxYlDQVQoOgdGkOPjrsN/assets/desktop/optimized/rev-a96b8ed/lh3.googleusercontent.com/GXUhciiJQlEvOd8JhE5kH0ZXyBoVDXFIdn-l-2Z9iFEF2i_3NgqK-wviBnBjjajUy1djH4PSxD5lYdhIfG7CFNA4RLjKtMyTO6axjveAAjAWqW6_A2DjXIiLxGri3IOSaeaIO57u=s0');
+  animation-delay: 10s;
+}
+
+@keyframes fade {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  33% { opacity: 1; }
+  53% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.65); 
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 700px;
+  width: 90%;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #bdecb6; 
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap; 
+  margin-top: 20px;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 12px 25px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+  min-width: 180px;
+}
+
+.btn-primary {
+  background-color: #bdecb6;
+  color: #333;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: white;
+  border: 2px solid #bdecb6;
+}
+
+.btn-primary:hover {
+  background-color: #a8d5a1;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(189, 236, 182, 0.2);
+}

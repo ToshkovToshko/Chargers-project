@@ -17,7 +17,6 @@ const CreateAd = () => {
 
     try {
       await axios.post('http://localhost:5000/ads', newAd);
-      alert("Обявата е качена успешно!");
       navigate('/catalog');
     } catch (error) {
       alert("Грешка при качване на обявата.");

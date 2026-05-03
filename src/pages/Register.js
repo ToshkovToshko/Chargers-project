@@ -22,8 +22,6 @@ const Register = () => {
             
             login(newUser);
 
-            alert("Регистрацията е успешна!");
-
             if (role === 'provider'){
                 navigate('/create-ad');
             } else {

@@ -26,7 +26,7 @@ const Navbar = () => {
 
         {user ? (
           <>
-            <span className="user-email">👤 {user.email}</span>
+            <span className="user-email">{user.email}</span>
             <button onClick={handleLogout} className="logout-btn">Изход</button>
           </>
         ) : (

@@ -7,10 +7,8 @@ import Register from './pages/Register';
 import Login from './pages/Login';
 import CreateAd from './pages/CreateAd';
 import Catalog from './pages/Catalog';
+import Home from './pages/Home';
 import { AuthProvider } from './context/AuthContext';
-
-// Временни страници (placeholder), докато създадем истинските файлове
-const Home = () => <h1>Добре дошли в EV Rent! 🚗⚡</h1>;
 
 function App() {
   return (
