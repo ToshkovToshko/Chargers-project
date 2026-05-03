@@ -11,6 +11,18 @@
       "password": "12345",
       "role": "provider",
       "id": 2
+    },
+    {
+      "email": "baiKolio@test.bg",
+      "password": "12345",
+      "role": "provider",
+      "id": 3
+    },
+    {
+      "email": "chichoPesho@test.bg",
+      "password": "12345",
+      "role": "renter",
+      "id": 4
     }
   ],
   "ads": [
@@ -20,7 +32,25 @@
       "address": "Жк. Дедово бл. 332 паркомясто 6",
       "imageUrl": "https://evpoint.bg/data/ufiles/images/catalog/main/megacart-product2/zarqdna-stancia-s-displei-ev22-pro-22-kw.jpg",
       "price": 5,
-      "id": 1
+      "id": 1,
+      "bookedBy": null
+    },
+    {
+      "name": "Зарядна Станция ВБ500",
+      "type": "Монофазна",
+      "address": "гр. Враца жк. Бабино бл.1 парко място - 10",
+      "imageUrl": "https://evpoint.bg/data/ufiles/images/catalog/main/megacart-product2/zarqdna-stanciq-za-stena-7-4-32-a-rheidon-tech-wb500-1.jpg",
+      "price": 4.5,
+      "id": 2
+    },
+    {
+      "name": "Зарядна станция Абб 6А",
+      "type": "Монофазна",
+      "address": "гр.Враца жк. Лелино бл. 26 Парко място - 3",
+      "imageUrl": "https://evpoint.bg/data/ufiles/images/catalog/main/megacart-product2/zarqdna-stancia-s-kabel-tip-2-abb-22-kw.jpg",
+      "price": 6.5,
+      "id": 3,
+      "bookedBy": null
     }
   ]
 }

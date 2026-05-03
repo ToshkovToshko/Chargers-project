@@ -6,12 +6,11 @@ import './App.css';
 import Register from './pages/Register';
 import Login from './pages/Login';
 import CreateAd from './pages/CreateAd';
+import Catalog from './pages/Catalog';
 import { AuthProvider } from './context/AuthContext';
 
 // Временни страници (placeholder), докато създадем истинските файлове
 const Home = () => <h1>Добре дошли в EV Rent! 🚗⚡</h1>;
-const Catalog = () => <h1>Каталог със зарядни станции</h1>;
-//const Register = () => <h1>Форма за регистрация</h1>;
 
 function App() {
   return (
