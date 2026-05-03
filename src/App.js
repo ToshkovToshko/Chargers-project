@@ -1,5 +1,4 @@
 import React from 'react';
-//Инстр. за навигация
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import './App.css';
@@ -9,14 +8,15 @@ import CreateAd from './pages/CreateAd';
 import Catalog from './pages/Catalog';
 import Home from './pages/Home';
 import { AuthProvider } from './context/AuthContext';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <AuthProvider>
       <Router>
-        <div className="App">
+        <div className="app-wrapper">
           <Navbar />
-          <main className="container">
+          <main className="content">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/catalog" element={<Catalog />} />
@@ -25,6 +25,7 @@ function App() {
               <Route path="/create-ad" element={<CreateAd />} />
             </Routes>
           </main>
+          <Footer />
         </div>
       </Router>
     </AuthProvider>
