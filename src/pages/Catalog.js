@@ -1,9 +1,13 @@
+//"Куката" useState - използвам я за управлението на локални данни
+//"Куката" useEffect - използвам я за извличане на данни при управление на страницата
 import React, { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
 import { AuthContext } from '../context/AuthContext';
 import './Catalog.css';
 
 const Catalog = () => {
+
+   // Пример за куката useState - използвам я за съхранение на обявите в базата от данни
   const [ads, setAds] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const adsPerPage = 9;
@@ -20,7 +24,7 @@ const Catalog = () => {
 
   const handleBooking = async (adId) => {
     if (!user) return alert("Моля, влезте в профила си!");
-    // Обновяваме обявата в сървъра, като добавяме имейл на резервиралия
+    // Рест Апи - Използвам Пач заявка за частична промяна - Тук намираме обявата с конкретното ИД и променяме само полето, оказващо дали е запазена или не
     await axios.patch(`http://localhost:5000/ads/${adId}`, { bookedBy: user.email });
     fetchAds();
   };

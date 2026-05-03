@@ -14,7 +14,8 @@ const Login = () => {
     e.preventDefault();
     try {
         
-      // Вземаме всички потребители и търсим съвпадение
+      // Използвам Рест Апи (приложението комуникира със сървъра) - Вземаме всички потребители и проверяваме дали въведения имейл и парола съвпадат с някой от записите
+      // Гет заявка
       const res = await axios.get('http://localhost:5000/users');
       const user = res.data.find(u => u.email === email && u.password === password);
 

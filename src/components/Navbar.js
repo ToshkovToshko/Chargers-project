@@ -1,9 +1,11 @@
+//"Куката" useContext - използвам я за да може компонента да разбере дали има логнат потребител
 import React, {useContext} from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
 import './Navbar.css';
 
 const Navbar = () => {
+  //Пример за куката useContext
   const { user, logout } = useContext(AuthContext);
   const navigate = useNavigate();
 
